@@ -1,4 +1,9 @@
 "use client";
+
+import LoginForm from './components/loginform';
+import App from './home/homepage';
+import './home/homepage.css';
+
 // import Image from "next/image";
 
 import { useEffect, useState } from 'react';
@@ -28,6 +33,8 @@ export default function Home() {
     <div>
       <h1>Message from FastAPI</h1>
       <p>{data.message}</p>
+      <LoginForm />
+      <App />
     </div>
   );
 }
